@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Quản lý dân cư - Paraline</title>
+    <title>Laravel Login Social</title>
 
     <!-- Styles -->
     <link rel="shortcut icon" href="{{ asset('images/avata.png') }}" />
