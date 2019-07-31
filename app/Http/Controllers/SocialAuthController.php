@@ -33,11 +33,10 @@ class SocialAuthController extends Controller
      */
     public function handleProviderCallback($provider)
     {
-        $admin = Socialite::driver($provider)->admin();
-
+        $admin = Socialite::driver($provider)->user();
         $authAdmin = $this->findOrCreateAdmin($admin, $provider);
         Auth::login($authAdmin, true);
-        return Redirect::to(Session::get('pre_url'));
+        return redirect()->route('admin.index');
     }
 
     /**

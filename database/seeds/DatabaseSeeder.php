@@ -16,6 +16,8 @@ class DatabaseSeeder extends Seeder
             'password' => bcrypt('secret'),
             'email' => str_random(10).'@gmail.com',
             'avatar' => 'avatar_20180612015940.jpg',
+            'provider' => '',
+            'provider_id' => 1,
             'role_type' => 1,
             'ins_id' => 1,
             'upd_id' => NULL,

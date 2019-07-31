@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    Route::get('dashboard',['uses'=>'AdminController@dashboard', 'as' => 'dashboard']);
 });
 
 /*---------------------------checkin----------------------------------------*/
@@ -28,4 +28,4 @@ Route::get('login', 'LoginController@getLogin');
 Route::post('login', ['uses' => 'LoginController@postLogin', 'as' => 'login']);
 Route::get('logout', ['uses' => 'LoginController@getLogout', 'as' => 'logout']);
 Route::get('/auth/{provider}', 'SocialAuthController@redirectToProvider');
-Route::get('/auth/{provide}/callback', 'SocialAuthController@handleProviderCallback');
+Route::get('/auth/{provider}/callback', 'SocialAuthController@handleProviderCallback');

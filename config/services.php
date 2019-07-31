@@ -37,7 +37,7 @@ return [
     'google' => [
         'client_id' => '488000473021-5svc1uklhove1pvnufj4hdacage33584.apps.googleusercontent.com',
         'client_secret' => 'XazihRFs9anbLP3Vh1O1wefU',
-        'redirect' => 'http://laravel.dev/auth/google/callback',
+        'redirect' => 'https://training.com/auth/google/callback',
     ],
 
 ];

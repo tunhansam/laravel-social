@@ -19,6 +19,8 @@ class CreateAdminTable extends Migration
             $table->string('password',64);
             $table->string('email',128);
             $table->string('avatar',128)->nullable();
+            $table->string('provider');
+            $table->string('provider_id');
             $table->addColumn('integer','role_type',['lenght'=>1]);
             $table->addColumn('integer','ins_id',['lenght'=>11]);
             $table->addColumn('integer','upd_id',['lenght'=>11])->nullable();
