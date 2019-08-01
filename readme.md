@@ -2,7 +2,7 @@
 
 - Clone project
 ```bash
-git clone https://gitlab.com/tunguyenngoc24/test_laravel
+git clone https://github.com/tunhansam/laravel-social
 ```
 - Install
 ```bash
