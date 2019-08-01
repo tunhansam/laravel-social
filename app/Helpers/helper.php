@@ -14,7 +14,7 @@ function getCurrentAdmin () {
 function getAvartaUrl () {
     $img = getCurrentAdmin()->avatar;
     if (!empty($img) && file_exists(public_path().'/'.getConfig('config', 'upload_folder', 'uploads/').$img)) {
-        return '/'.getConfig('config', 'upload_folder', 'uploads/').$img;
+        return asset('uploads').'/'.$img;
     }
     return getConfig('config', 'placeholder_image', '/images/placeholder.png');
 }
